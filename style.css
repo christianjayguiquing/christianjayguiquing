@@ -1,0 +1,533 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Setting a default font for the body */
+    background-color: #e6e2e2;
+}
+
+/* Promo Banner Styles */
+.promo-banner {
+    padding: 20px;
+    text-align: center;
+    color: #f1eded;
+    background-color: #000; /* Light background for visibility */
+}
+
+.promo-banner span {
+    font-weight: bold;
+}
+/* NAVBAR */
+.navbar {
+    background-color: rgb(206, 195, 195); /* Set the background color to white */
+    padding: 1rem 1.5rem; /* Add padding to the navbar for better spacing */
+}
+
+.navbar-brand {
+    font-weight: bold; /* Make the text bolder */
+    font-size: 2rem; /* Increase font size for JAYCAPS */
+}
+
+.jay {
+    color: black; /* Color for 'JAY' */
+}
+
+.caps {
+    color: grey; /* Color for 'CAPS' */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.25rem; /* Increase font size for nav links */
+    margin: 0 1rem; /* Add horizontal margin between links */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Add hover effect for nav links */
+}
+.navbar .nav-link {
+    font-weight: bold; /* Make text bold */
+}
+
+.dropdown-menu {
+    padding: 0.5rem 0; /* Add padding to dropdown menu */
+}
+
+.dropdown-item {
+    padding: 0.5rem 1.5rem; /* Add padding to dropdown items */
+}
+
+.form-control {
+    margin-right: 1rem; /* Add margin to the right of the search input */
+}
+
+.fas {
+    cursor: pointer; /* Ensure the cart and user icons are clickable */
+    font-size: 24px; 
+    margin-left: 10px; /* Space between icons */
+}
+
+.fas:hover {
+    color: rgb(22, 22, 22); /* Change color on hover for icons */
+}
+.dropdown-button {
+    background-color: white; /* Default background color */
+    color: black; /* Default text color */
+    border: 1px solid #ccc; /* Default border */
+    padding: 10px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.dropdown-button:active, /* Active state when clicked */
+.dropdown-button:focus { /* Focus state when selected via keyboard */
+    background-color: rgb(128, 128, 131); /* Change background color to blue */
+    color: white; /* Change text color to white for contrast */
+}
+/* Container Styling */
+.search-container {
+    position: relative; /* Ensure the container is positioned relative for absolute positioning of the icon */
+    width: 250px; /* Set a fixed width for the search container */
+}
+
+.search-container .form-control {
+    width: 100%; /* Make the input field take the full width of the container */
+    padding-left: 35px; /* Add padding to the left to make space for the icon */
+    border-radius: 4px; /* Optional: Add border radius for rounded corners */
+    border: 1px solid #030303; /* Optional: Add a border */
+    height: 38px; /* Optional: Set a height for the input field */
+}
+
+.search-button {
+    background-color: grey; /* Set the background color to grey */
+    color: white; /* Set the text color to white for contrast */
+    border: 1px solid grey; /* Optional: Set a border color */
+    border-radius: 0 4px 4px 0; /* Rounded corners for the right side */
+    height: 38px; /* Match height with input field */
+    margin-left: -1px; /* Prevent double border effect */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.search-button:hover {
+    background-color: darkgrey; /* Darker grey on hover */
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Modal Header Style */
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    color: white; /* Text color */
+}
+
+/* Background Video */
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 80%;
+    width: auto;
+    height: auto;
+    z-index: 1; /* Place the video behind the content */
+    transform: translate(-50%, -50%); /* Center the video */
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative; /* Position relative to allow z-index */
+    z-index: 2; /* Place content above the video */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add some padding */
+}
+
+.display-4 {
+    font-size: 3rem; /* Adjust font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.lead {
+    font-size: 1.5rem; /* Adjust font size for the paragraph */
+    margin-bottom: 30px; /* Space below the paragraph */
+}
+
+
+.buy-now-button {
+    padding: 8px 15px;
+    background-color: #5e615e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-now-button:hover {
+    background-color: #dfab03; /* Darker shade on hover */
+}
+/* Button Styles */
+.btn-dark {
+    background-color: #343a40; /* Dark background for button */
+    color: white; /* White text for button */
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn-dark:hover {
+    background-color: #495057; /* Darker shade on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem; /* Smaller font size on mobile */
+    }
+
+    .lead {
+        font-size: 1.2rem; /* Smaller font size on mobile */
+    }
+
+    .btn-dark {
+        padding: 8px 16px; /* Adjust button padding on mobile */
+    }
+}
+
+/* Keyframes for scrolling effect */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%); /* Start at 100% (off-screen) */
+    }
+    100% {
+        transform: translateX(-100%); /* End at -100% (off-screen to the left) */
+    }
+}
+
+.btn-grey {
+    background-color: grey; /* Change button color to grey */
+    color: white; /* Ensure text color is white for contrast */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn-grey:hover {
+    background-color: orange; /* Darker shade on hover */
+}
+
+
+/* Optional: Style the link to remove underline and change color */
+.hover-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hover-link:hover p {
+    color: orange; /* Change text color on hover */
+}
+
+/* Latest Release Button */
+.btn-custom {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Button color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.btn-custom:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: #1e1e1e;
+  height: 100vh;
+  padding: 0 50px;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hero-content {
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin: 0 0 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.hero-content a {
+  display: inline-block;
+  background-color: #fff;
+  color: #1e1e1e;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-content a:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+/* Main Heading Styles */
+.container.text-center {
+    background-color: transparent; /* Light gray */
+    padding: 20px;
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.containers h1 {
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: bold;
+    margin: 20px 0;
+}
+/* BLACK TEXT */
+.black-text {
+    color: black;
+}
+
+/* Brands Section */
+.brands-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.brands-section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    width: 160px; /* Adjust width as needed */
+    height: 140px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.brand img {
+    max-width: 100%;
+    max-height: 70%;
+}
+
+.brand.explore {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.brand.explore p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.brand.explore button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Image Wrapper */
+.image-wrapper {
+    width: 100%;
+    height: 300px; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #060707; /* Optional background */
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure the image fits within the box without cropping */
+}
+
+/* Text inside the image */
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 100%; /* Full width of the column */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 1200px; /* Maximum height for the image */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(24, 22, 22);
+    font-size: 3rem; /* Font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for visibility */
+}
+
+.my-4 {
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-size: 2em; /* Font size */
+    font-weight: bold; /* Font weight */
+    color: #333; /* Text color */
+    margin: 20px 0; /* Margin */
+    text-align: center; /* Center text */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+/* Grid Image Styles */
+.grid-images img {
+    transition: transform 0.3s;
+}
+
+.grid-images img:hover {
+    transform: scale(1.05); /* Scale on hover */
+}
+
+/* Slider Styles */
+.slider {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 10px 0;
+    background-image: url('https://via.placeholder.com/1920x1080/000000/FFFFFF?text=+') !important;
+    background-size: cover;
+    background-position: center;
+}
+.banner-container {
+    /* Ensure the container has some height */
+    height: 100px; /* Adjust based on your design */
+    overflow: hidden; /* Prevents overflow */
+}
+
+.sticky-banner {
+    position: sticky;
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure it stays above other content */
+    background-color: rgba(0, 0, 0, 0.8); /* Optional: Background color for visibility */
+}
+.slider-content {
+    display: flex;
+    white-space: nowrap;
+    animation: slide 15s linear infinite;
+}
+
+.slider-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 30px; /* Space between items */
+}
+
+.text {
+    color: #888c91;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.button {
+    background-color: transparent;
+    color: rgb(252, 246, 246);
+    border: 2px solid rgb(241, 234, 234);
+    border-radius: 20px;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.hover-img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image */
+}
+
+.subscribe-button {
+    background-color: #fff; /* Default background color */
+    color: #1a1a1a; /* Default text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.subscribe-button:hover {
+    background-color: rgb(129, 128, 126); /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+.footer-link {
+        margin: 0 10px;
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s;
+    }
+
+    .footer-link:hover {
+        color: orange;
+    }
+  

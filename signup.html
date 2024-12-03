@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - JAYCAPS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #b1aeae, #7d7d7d);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .signup-container {
+            width: 650px; /* Increased width */
+            background: transparent;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px 30px; /* Adjusted padding for smaller height */
+            /* Removed height property */
+        }
+        .signup-header {
+            text-align: center;
+            margin-bottom: 15px; /* Reduced margin for smaller height */
+        }
+        .logo {
+            font-size: 36px; /* Adjust the font size as needed */
+            font-weight: bold;
+        }
+        .jay {
+            color: #1a1a1a; /* Color for "JAY" */
+        }
+        .caps {
+            color: #4e4a4a; /* Color for "CAPS" */
+        }
+        .signup-header h2 {
+            color: #333;
+        }
+        .btn-custom {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="signup-container">
+    <div class="signup-header">
+        <div class="logo">
+            <span class="jay">JAY</span><span class="caps">CAPS</span>
+        </div>
+        <p>Create an account to get started</p>
+    </div>
+    <form>
+        <div class="mb-3">
+            <label for="name" class="form-label"></label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label"></label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label"></label>
+            <input type="password" class="form-control" id="password" placeholder="Create a password" required>
+        </div>
+        <div class="mb-3">
+            <label for="confirm-password" class="form-label"></label>
+            <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password" required>
+        </div><a href="login.html" class="btn btn-custom w-100">Sign Up</a>
+    </form>
+    <div class="text-center mt-3">
+        <p>Already have an account? <a href="login.html" style="color: #1a1a1a; text-decoration: none;">Login</a></p>
+    </div>
+</div>
+
+</body>
+</html>
